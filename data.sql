@@ -31,4 +31,41 @@ UPDATE animals set owner_id = 3 where name in ('Devimon', 'Plantmon');
 UPDATE animals set owner_id = 4 where name in ('Charmander', 'Squirtle', 'Blossom');
 UPDATE animals set owner_id = 5 where name in ('Angemon', 'Boarmon');
 
+INSERT INTO
+    vets(name, age, date_of_graduation)
+VALUES
+    ('William Tatcher', 45, 'Apr 23 2000'),
+    ('Maisy Smith', 26, 'Jan 17 2019'),
+    ('Stephanie Mendez', 64, 'May 04 1981'),
+    ('Jack Harkness', 38, 'Jun 08 2008');
 
+INSERT INTO
+    specialization(vet_id, species_id)
+VALUES
+    (1, 1),
+    (3, 1),
+    (4, 2);
+
+INSERT INTO
+    visits(animal_id, vet_id, date_of_visit)
+VALUES
+    (1, 1, 'May 24 2020'),
+    (1, 3, 'Jul 22 2020'),
+    (2, 4, 'Feb 02 2021'),
+    (3, 2, 'Jan 05 2020'),
+    (3, 2, 'Mar 08 2020'),
+    (3, 2, 'May 14 2020'),
+    (4, 3, 'May 04 2021'),
+    (5, 4, 'Feb 24 2021'),
+    (6, 2, 'Dec 21 2019'),
+    (6, 1, 'Aug 10 2020'),
+    (6, 2, 'Apr 07 2021'),
+    (7, 3, 'Sep 29 2019'),
+    (8, 4, 'Oct 03 2020'),
+    (8, 4, 'Nov 04 2020'),
+    (9, 2, 'Jan 24 2019'),
+    (9, 2, 'May 15 2019'),
+    (9, 2, 'Feb 27 2020'),
+    (9, 2, 'Aug 03 2020'),
+    (10, 3, 'May 24 2020'),
+    (10, 1, 'Jan 01 2021');
